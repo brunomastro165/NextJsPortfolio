@@ -60,21 +60,21 @@ const Navbar = () => {
               <div className="ml-4 flex items-center space-x-4">
                 {/* Enlaces de navegación */}
                 <div className="relative group flex justify-center">
-                  <span className="cursor-pointer items-start">Quién soy</span>
+                  <span className="cursor-pointer items-start text-black">Quién soy</span>
                   <div
                     className={`absolute bg-black w-3 group-hover:w-full group-hover:bg-green-300  h-1 rounded-full mt-6 transition-width duration-200 `}
                   ></div>
                 </div>
 
                 <div className="relative group flex justify-center">
-                  <span className="cursor-pointer items-start">Proyectos</span>
+                  <span className="cursor-pointer items-start text-black">Proyectos</span>
                   <div
                     className={`absolute bg-black w-3 group-hover:w-full group-hover:bg-green-300 h-1 rounded-full mt-6 transition-width duration-200 `}
                   ></div>
                 </div>
 
                 <div className="relative group flex justify-center">
-                  <span className="cursor-pointer items-start">Mi CV</span>
+                  <span className="cursor-pointer items-start text-black">Mi CV</span>
                   <div
                     className={`absolute bg-black w-3 group-hover:w-full group-hover:bg-green-300  h-1 rounded-full mt-6 transition-width duration-200 `}
                   ></div>
@@ -101,7 +101,7 @@ const Navbar = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="currentColor"
+                    stroke="black"
                   >
                     <path
                       strokeLinecap="round"
@@ -116,7 +116,7 @@ const Navbar = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="currentColor"
+                    stroke="black"
                   >
                     <path
                       strokeLinecap="round"
@@ -136,13 +136,13 @@ const Navbar = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 ">
               {/* Enlaces de navegación en el menú desplegable. */}
-              <button className="text-white  hover:bg-white hover:bg-opacity-20 hover:text-white p-3 rounded-md">
+              <button className="text-black  hover:bg-black hover:bg-opacity-20 hover:text-black p-3 rounded-md">
                 Quienes somos
               </button>
-              <button className="text-white  hover:bg-white hover:bg-opacity-20 hover:text-white p-3 rounded-md">
+              <button className="text-black  hover:bg-black hover:bg-opacity-20 hover:text-black  p-3 rounded-md">
                 Servicios
               </button>
-              <button className="text-white  hover:bg-white hover:bg-opacity-20 hover:text-white p-3 rounded-md">
+              <button className="text-black  hover:bg-black hover:bg-opacity-20 hover:text-black  p-3 rounded-md">
                 Productos
               </button>
             </div>

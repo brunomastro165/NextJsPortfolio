@@ -3,6 +3,7 @@ import React from "react";
 import CardBruno2 from "./CardBruno2";
 import { useState } from "react";
 
+
 const Feature = () => {
   const serviciosFront = [
     {
@@ -79,7 +80,7 @@ const Feature = () => {
                 onClick={() => setIsClicked(true)}
               >
                 <span className="cursor-pointer items-start">FrontEnd</span>
-                <div className={`absolute bg-white w-3 group-hover:w-full h-1 rounded-full mt-10 transition-width duration-200  ${isClicked ? 'bg-green-300 w-full' : ''}`}></div>
+                <div className={`absolute bg-white w-3 group-hover:w-full h-1 rounded-full mt-10 transition-width duration-200  ${isClicked ? 'bg-green-400 w-full' : ''}`}></div>
               </div>
 
               <span className="mx-2"> | </span>
@@ -89,18 +90,16 @@ const Feature = () => {
                 onClick={() => setIsClicked(false)}
               >
                 <span className="cursor-pointer items-start">BackEnd</span>
-                <div className={`absolute bg-white w-3 group-hover:w-full  h-1 rounded-full mt-10 transition-width duration-200  ${isClicked ? '' : 'bg-green-300 w-full'}`}></div>
+                <div className={`absolute bg-white w-3 group-hover:w-full  h-1 rounded-full mt-10 transition-width duration-200  ${isClicked ? '' : 'bg-green-400 w-full'}`}></div>
               </div>
             </h1>
 
-            <div className="flex mt-6 justify-center">
-              <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
-            </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center items-center">
             {isClicked
-              ? serviciosFront.map((servicio) => (
+              ? 
+              serviciosFront.map((servicio) => (
                   <CardBruno2
                     key={servicio}
                     nombre={servicio.nombre}

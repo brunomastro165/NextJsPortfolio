@@ -4,7 +4,11 @@ const Hero = () => {
   return (
     <div className="container">
     <section className="bg-hero-imagen w-full h-auto  bg-center   "  > 
-   
+    sadsadds
+    adsa
+    dsa
+    asdsad
+    asd
 
       </section>
       </div>
