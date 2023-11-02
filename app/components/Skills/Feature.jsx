@@ -88,7 +88,7 @@ const Feature = () => {
                 className="relative group flex justify-center"
                 onClick={() => setIsClicked(false)}
               >
-                <span className="cursor-pointer items-start">Backend</span>
+                <span className="cursor-pointer items-start">BackEnd</span>
                 <div className={`absolute bg-white w-3 group-hover:w-full  h-1 rounded-full mt-10 transition-width duration-200  ${isClicked ? '' : 'bg-green-300 w-full'}`}></div>
               </div>
             </h1>
