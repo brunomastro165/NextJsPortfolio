@@ -79,7 +79,7 @@ const Feature = () => {
                 onClick={() => setIsClicked(true)}
               >
                 <span className="cursor-pointer items-start">FrontEnd</span>
-                <div className={`absolute bg-white w-3 group-hover:w-full h-1 rounded-full mt-10 transition-width duration-200  ${isClicked ? 'bg-green-300 w-full' : ''}`}></div>
+                <div className={`absolute bg-white w-3 group-hover:w-full h-1 rounded-full mt-10 transition-width duration-200  ${isClicked ? 'bg-green-400 w-full' : ''}`}></div>
               </div>
 
               <span className="mx-2"> | </span>
@@ -89,7 +89,7 @@ const Feature = () => {
                 onClick={() => setIsClicked(false)}
               >
                 <span className="cursor-pointer items-start">Backend</span>
-                <div className={`absolute bg-white w-3 group-hover:w-full  h-1 rounded-full mt-10 transition-width duration-200  ${isClicked ? '' : 'bg-green-300 w-full'}`}></div>
+                <div className={`absolute bg-white w-3 group-hover:w-full  h-1 rounded-full mt-10 transition-width duration-200  ${isClicked ? '' : 'bg-green-400 w-full'}`}></div>
               </div>
             </h1>
 
