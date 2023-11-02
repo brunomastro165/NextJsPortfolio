@@ -59,38 +59,34 @@ const Navbar = () => {
               {/* Contenedor con enlaces visibles en pantallas medianas (md). */}
               <div className="ml-4 flex items-center space-x-4">
                 {/* Enlaces de navegación */}
-                <div className="">
-                  <button
-                    //Se configura que al dar click al botón, la propiedad setOpen se invierte (si era true es false, y viceversa)
-                    //Se aplica un efecto condicional dentro del className
-                    className="duration-75 ease-in text-black p-1 hover:border-opacity-100 hover:border-[#49a078] hover:border-b-4 relative"
-                  >
-                    <span className="flex items-center"> Quién soy </span>
-                  </button>
+                <div className="relative group flex justify-center">
+                  <span className="cursor-pointer items-start">Quién soy</span>
+                  <div
+                    className={`absolute bg-black w-3 group-hover:w-full group-hover:bg-green-300  h-1 rounded-full mt-6 transition-width duration-200 `}
+                  ></div>
                 </div>
 
-                <div className="div">
-                  <button
-                    className={`duration-75 ease-in text-black p-1 hover:border-opacity-100 hover:border-[#49a078] hover:border-b-4 relative`}
-                  >
-                    <span className="flex items-center"> Mi CV </span>
-                  </button>
+                <div className="relative group flex justify-center">
+                  <span className="cursor-pointer items-start">Proyectos</span>
+                  <div
+                    className={`absolute bg-black w-3 group-hover:w-full group-hover:bg-green-300 h-1 rounded-full mt-6 transition-width duration-200 `}
+                  ></div>
                 </div>
 
-                <div className="div">
-                  <button
-                    className={`duration-75 ease-in text-black p-1 hover:border-opacity-100 hover:border-[#49a078] hover:border-b-4 relative`}
-                  >
-                    <span className="flex items-center"> Proyectos </span>
-                  </button>
+                <div className="relative group flex justify-center">
+                  <span className="cursor-pointer items-start">Mi CV</span>
+                  <div
+                    className={`absolute bg-black w-3 group-hover:w-full group-hover:bg-green-300  h-1 rounded-full mt-6 transition-width duration-200 `}
+                  ></div>
                 </div>
               </div>
+
             </div>
             <button
               type="button"
-              className=" duration-100 ease-in text-white bg-black font-medium rounded-md text-sm px-5 py-2.5 text-center mr-2 mb-2  mt-auto mb-auto hover:py-3.5 hover:rounded-sm"
+              className=" duration-100 ease-in text-white bg-black font-medium rounded-md text-sm px-5 py-2.5 text-center mr-2 mb-2  mt-auto mb-auto hover:py-3.5 hover:rounded-md hover:bg-green-300 hover:text-black"
             >
-              Contactanos
+              Contactar
             </button>
             <div className="md:hidden flex items-center">
               {/* Contenedor con el botón del menú desplegable en pantallas pequeñas. */}

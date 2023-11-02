@@ -38,7 +38,7 @@ const Feature = () => {
       descripcion: "ProyectosR1",
       descripcion2: "ProyectosR2",
       descripcion3: "ProyectosR3",
-      imagen: "react.svg",
+      imagen: "java.svg",
     },
     {
       id: 2,
@@ -46,7 +46,7 @@ const Feature = () => {
       descripcion: "ProyectosN1",
       descripcion2: "ProyectosN2",
       descripcion3: "ProyectosN3",
-      imagen: "nextjs.svg",
+      imagen: "python.svg",
     },
     {
       id: 3,
@@ -54,7 +54,7 @@ const Feature = () => {
       descripcion: "ProyectosT1",
       descripcion2: "ProyectosT2",
       descripcion3: "ProyectosT3",
-      imagen: "tailwind.svg",
+      imagen: "cs.svg",
     },
   ];
 
@@ -79,7 +79,7 @@ const Feature = () => {
                 onClick={() => setIsClicked(true)}
               >
                 <span className="cursor-pointer items-start">FrontEnd</span>
-                <div className={`absolute bg-white w-3 group-hover:w-full h-1 rounded-full mt-10 transition-width duration-200  ${isClicked ? 'bg-green-400 w-full' : ''}`}></div>
+                <div className={`absolute bg-white w-3 group-hover:w-full h-1 rounded-full mt-10 transition-width duration-200  ${isClicked ? 'bg-green-300 w-full' : ''}`}></div>
               </div>
 
               <span className="mx-2"> | </span>
@@ -89,7 +89,7 @@ const Feature = () => {
                 onClick={() => setIsClicked(false)}
               >
                 <span className="cursor-pointer items-start">Backend</span>
-                <div className={`absolute bg-white w-3 group-hover:w-full  h-1 rounded-full mt-10 transition-width duration-200  ${isClicked ? '' : 'bg-green-400 w-full'}`}></div>
+                <div className={`absolute bg-white w-3 group-hover:w-full  h-1 rounded-full mt-10 transition-width duration-200  ${isClicked ? '' : 'bg-green-300 w-full'}`}></div>
               </div>
             </h1>
 
