@@ -82,12 +82,14 @@ const Navbar = () => {
               </div>
 
             </div>
-            <button
+            <Link
+            href={'https://wa.me/5492613998137'}
+            target="blank"
               type="button"
               className=" duration-100 ease-in text-white bg-black font-medium rounded-md text-sm px-5 py-2.5 text-center mr-2 mb-2  mt-auto mb-auto hover:py-3.5 hover:rounded-md hover:bg-green-300 hover:text-black"
             >
               Contactar
-            </button>
+            </Link>
             <div className="md:hidden flex items-center">
               {/* Contenedor con el botón del menú desplegable en pantallas pequeñas. */}
               <button

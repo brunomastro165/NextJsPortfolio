@@ -2,14 +2,28 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="container">
-    <section className="bg-hero-imagen w-full h-auto  bg-center   "  > 
-    sadsadds
-    adsa
-    dsa
-    asdsad
-    asd
+    <div className="pt-10">
+    <section className="bg-black  h-auto    "  > 
+    klj
+    klj klj klj klj klj
+    klj
+    klj
+    klj
+     klj klj klj klj klj klj klj
+     klj klj
+     klj
+     klj
+     klj
+     klj
 
+
+      klj
+       klj
+       klj
+       klj
+       klj
+       klj
+       
       </section>
       </div>
      

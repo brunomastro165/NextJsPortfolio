@@ -10,24 +10,33 @@ const Feature = () => {
       id: 1,
       nombre: "React",
       descripcion: "ProyectosR1",
+      link1: "https://github.com/brunomastro165/calculadoraLab3.git",
       descripcion2: "ProyectosR2",
+      link2: "https://github.com/brunomastro165/calculadoraLab3.git",
       descripcion3: "ProyectosR3",
+      link3: "https://github.com/brunomastro165/calculadoraLab3.git",
       imagen: "react.svg",
     },
     {
       id: 2,
       nombre: "NextJS",
-      descripcion: "ProyectosN1",
-      descripcion2: "ProyectosN2",
-      descripcion3: "ProyectosN3",
+      descripcion: "ProyectosR1",
+      link1: "https://github.com/brunomastro165/calculadoraLab3.git",
+      descripcion2: "ProyectosR2",
+      link2: "https://github.com/brunomastro165/calculadoraLab3.git",
+      descripcion3: "ProyectosR3",
+      link3: "https://github.com/brunomastro165/calculadoraLab3.git",
       imagen: "nextjs.svg",
     },
     {
       id: 3,
       nombre: "Tailwind",
-      descripcion: "ProyectosT1",
-      descripcion2: "ProyectosT2",
-      descripcion3: "ProyectosT3",
+      descripcion: "ProyectosR1",
+      link1: "https://github.com/brunomastro165/calculadoraLab3.git",
+      descripcion2: "ProyectosR2",
+      link2: "https://github.com/brunomastro165/calculadoraLab3.git",
+      descripcion3: "ProyectosR3",
+      link3: "https://github.com/brunomastro165/calculadoraLab3.git",
       imagen: "tailwind.svg",
     },
   ];
@@ -37,24 +46,33 @@ const Feature = () => {
       id: 1,
       nombre: "Java",
       descripcion: "ProyectosR1",
+      link1: "https://github.com/brunomastro165/calculadoraLab3.git",
       descripcion2: "ProyectosR2",
+      link2: "https://github.com/brunomastro165/calculadoraLab3.git",
       descripcion3: "ProyectosR3",
+      link3: "https://github.com/brunomastro165/calculadoraLab3.git",
       imagen: "java.svg",
     },
     {
       id: 2,
       nombre: "Python",
-      descripcion: "ProyectosN1",
-      descripcion2: "ProyectosN2",
-      descripcion3: "ProyectosN3",
+      descripcion: "Juego de Pool",
+      link1: "https://github.com/brunomastro165/ThePoolProyect.git",
+      descripcion2: "ProyectosR2",
+      link2: "https://github.com/brunomastro165/calculadoraLab3.git",
+      descripcion3: "ProyectosR3",
+      link3: "https://github.com/brunomastro165/calculadoraLab3.git",
       imagen: "python.svg",
     },
     {
       id: 3,
       nombre: "C#",
-      descripcion: "ProyectosT1",
-      descripcion2: "ProyectosT2",
-      descripcion3: "ProyectosT3",
+      descripcion: "Calculadora completa",
+      link1: "https://github.com/brunomastro165/calculadoraLab3.git",
+      descripcion2: "Contabilidad + blockchain",
+      link2: "https://github.com/SR0jo/ProgramaContable.git",
+      descripcion3: "?",
+      link3: "https://github.com/brunomastro165/calculadoraLab3.git",
       imagen: "cs.svg",
     },
   ];
@@ -80,7 +98,7 @@ const Feature = () => {
                 onClick={() => setIsClicked(true)}
               >
                 <span className="cursor-pointer items-start">FrontEnd</span>
-                <div className={`absolute bg-white w-3 group-hover:w-full h-1 rounded-full mt-10 transition-width duration-200  ${isClicked ? 'bg-green-400 w-full' : ''}`}></div>
+                <div className={`absolute bg-white w-3 group-hover:w-full h-1 rounded-full mt-10 transition-width duration-200  ${isClicked ? 'bg-green-300 w-full' : ''}`}></div>
               </div>
 
               <span className="mx-2"> | </span>
@@ -90,7 +108,7 @@ const Feature = () => {
                 onClick={() => setIsClicked(false)}
               >
                 <span className="cursor-pointer items-start">BackEnd</span>
-                <div className={`absolute bg-white w-3 group-hover:w-full  h-1 rounded-full mt-10 transition-width duration-200  ${isClicked ? '' : 'bg-green-400 w-full'}`}></div>
+                <div className={`absolute bg-white w-3 group-hover:w-full  h-1 rounded-full mt-10 transition-width duration-200  ${isClicked ? '' : 'bg-green-300 w-full'}`}></div>
               </div>
             </h1>
 
@@ -104,9 +122,13 @@ const Feature = () => {
                     key={servicio}
                     nombre={servicio.nombre}
                     descripcion={servicio.descripcion}
+                    link1={servicio.link1}
                     descripcion2={servicio.descripcion2}
+                    link2={servicio.link2}
                     descripcion3={servicio.descripcion3}
+                    link3={servicio.link3}
                     imagen={servicio.imagen}
+                    
                   />
                 ))
               : serviciosBack.map((servicio) => (
@@ -114,8 +136,11 @@ const Feature = () => {
                     key={servicio}
                     nombre={servicio.nombre}
                     descripcion={servicio.descripcion}
+                    link1={servicio.link1}
                     descripcion2={servicio.descripcion2}
+                    link2={servicio.link2}
                     descripcion3={servicio.descripcion3}
+                    link3={servicio.link3}
                     imagen={servicio.imagen}
                   />
                 ))}

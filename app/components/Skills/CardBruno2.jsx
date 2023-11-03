@@ -6,16 +6,16 @@ import Image from 'next/image';
 const CardBruno2 = (props) => {
 
     const descripciones1 = [
-        { id: 1, descripcion: props.descripcion},
-        { id: 2, descripcion: props.descripcion2}, 
-        { id: 3, descripcion: props.descripcion3},
+        { id: 1, descripcion: props.descripcion, link1: props.link1},
+        { id: 2, descripcion: props.descripcion2, link1: props.link2}, 
+        { id: 3, descripcion: props.descripcion3, link1: props.link3},
     ]
     
     return (
 
         <div className="p-3 md:w-auto text-center flex flex-col items-center justify-center bg-opacity-100 m-4 rounded-md  ">
             <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transform transition-transform">
-                <div className='flex justify-center'>
+                <div className='flex justify-center mb-2'>
                     <Image
                         width={70}
                         height={70}
@@ -24,10 +24,10 @@ const CardBruno2 = (props) => {
                 </div>
                 <h5 className="mb-4 text-xl font-medium text-gray-800 dark:text-gray-400 min-h-16">{props.nombre}</h5>
 
-                <ul role="list" className="space-y-5 my-7 text-center">
+                <ul role="list" className="space-y-5 my-7 ">
 
                     {descripciones1.map((objetoDescripcion) => (
-                        <ItemsCB2 key={objetoDescripcion} descripcion={objetoDescripcion.descripcion} />
+                        <ItemsCB2 key={objetoDescripcion} descripcion={objetoDescripcion.descripcion} link1={objetoDescripcion.link1} />
                     ))}
 
                 </ul>
