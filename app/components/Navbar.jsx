@@ -39,7 +39,7 @@ const Navbar = () => {
   // Renderiza la estructura de la barra de navegación.
   return (
     <>
-      <nav className="bg-[#FFFFFF] border-black w-full fixed z-50 border-b-2">
+      <nav className="bg-[#FFFFFF] border-black w-full fixed z-50 border-b-2 top-0 sticky">
         {/* Barra de navegación con un fondo azul. */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Contenedor que limita el ancho de la barra de navegación. */}
