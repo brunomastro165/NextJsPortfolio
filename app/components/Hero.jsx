@@ -42,7 +42,7 @@ const Hero = () => {
 
 
           <Image
-            className=""
+            className="mt-5"
             src={'me.svg'}
             width={400}
             height={400}

@@ -19,6 +19,8 @@ module.exports = {
           'feature' : "url('/svgbg.svg')",
           'test' : "url('https://img.freepik.com/free-vector/random-square-halftone-pattern_1409-1062.jpg?w=996&t=st=1698878955~exp=1698879555~hmac=34cd5abbdcd3def1091224acf19733a575e3f80daeea6665b0decc5922dc5d29')",
           'test2' : "/public/hero.jpg",
+          'front' : "url('/frontbg.svg')",
+          'back' : "url('/backbg.svg')",
           
       },  
       
